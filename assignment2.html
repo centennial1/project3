@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="us">
+    <head>
+        <title>Table</title>
+       
+        <style>
+    
+            body {
+                margin:0;
+            }
+            
+            form, h1,img {
+                margin: 10px;
+            }
+            table {
+                max-width: 500px;
+                margin-bottom: 10px;
+            }
+            .table_container {
+                max-width: 500px;
+                margin: auto;
+            }
+            label { display: block;}
+            input { 
+                padding: 5px;
+                margin: 5px 0;
+            }
+            
+            h1 {
+                color: #4a4a0a;
+            }
+            
+            td {
+                color: #114963;
+            }
+            
+            footer {
+                width: 100%;
+                padding: 10px;
+                color: white;
+                background-color: black;
+                text-align: center;
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        
+        <h1>Create a Table</h1>
+
+     
+        <form>
+            <label for="numrows">Enter number of rows: </label>
+           
+            <input type="text" name="numrows" id="numrows"/>
+            <label for ="numcols">Enter number of columns:</label> 
+            <input type="text" name="numcols" id="numcols"/><br>
+            
+            <input name="output" type="button" value="Click to make a table" onclick="makeTable();"/>
+        </form>
+            <br> <br>
+        <div class="table_container" >
+
+        <div id="result"></div>
+
+    
+        <img src="https://amymhaddad.s3.amazonaws.com/oriental-tiles.png" width="100" height="100" alt="online hosted image">
+        </div>
+        <footer>
+            <p>Copyright &copy; Minh Nhat.</p>
+        </footer>
+    
+       
+        <script src="assignment2.js"></script> 
+        
+    </body>
+</html>
